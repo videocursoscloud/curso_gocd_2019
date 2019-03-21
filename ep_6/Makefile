@@ -17,3 +17,4 @@ test:
 	docker run -d -p 8080:80 --rm --name curso_gocd_ep_6 curso_gocd_ep_6:$(GIT_TAG)
 	sleep 2
 	curl localhost:8080
+	docker rm -f curso_gocd_ep_6
